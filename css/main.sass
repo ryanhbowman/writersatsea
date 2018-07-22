@@ -1,0 +1,63 @@
+@font-face
+  font-family: 'Imperial'
+  src: url('../fonts/subset-URWImperialTOT-Reg.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+//colors
+$main: #5B4032
+$text: #4d4d4d
+
+body
+  font-family: 'Imperial', helvetica
+
+h1
+  font-size: 80px
+  line-height: 70px
+  color: $main
+
+p
+  color: $text
+  font-size: 16px
+  line-height: 24px
+  margin-bottom: 1em
+  &:last-child
+    margin-bottom: 0
+
+.container
+  overflow: hidden
+
+.left
+  width: 60%
+  position: fixed
+  left: 0
+  bottom: 0
+  top: 0
+  background: url('../images/background.jpg')
+  background-size: cover
+
+.right
+  width: 40%
+  position: fixed
+  right: 0
+  bottom: 0
+  top: 0
+  background: white
+.right__header
+  position: absolute
+  top: 90px
+  left: 90px
+.right__text
+  position: absolute
+  bottom: 90px
+  left: 90px
+  max-width: 400px
+.btn
+  display: inline-block
+  font-size: 16px
+  border: 1px $main solid
+  background: none
+  padding: 1em 2em
+  text-align: center
+  color: $main
+  text-decoration: none
