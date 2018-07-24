@@ -16,8 +16,13 @@ h1
   line-height: 70px
   color: $main
 h2
-  font-size: 22px
+  font-size: 24px
   margin: 1em 0 .5em
+  color: $main
+  font-weight: 700
+h3
+  font-size: 18px
+  margin: 1em 0 10px
   color: $main
   font-weight: 700
 
@@ -32,53 +37,40 @@ p
 .container
   overflow: hidden
 
-.left
-  width: 60%
-  position: fixed
-  left: 0
-  bottom: 0
-  top: 0
-  background: url('../images/background.jpg')
-  background-size: cover
+// .left
+//   width: 60%
+//   position: fixed
+//   left: 0
+//   bottom: 0
+//   top: 0
+//   background: url('../images/background.jpg')
+//   background-size: cover
+//
+// .right
+//   width: 40%
+//   position: fixed
+//   right: 0
+//   bottom: 0
+//   top: 0
+//   background: white
+// .right__header
+//   // position: absolute
+//   // top: 90px
+//   // left: 90px
+// .right__text
+//   position: absolute
+//   bottom: 5em
+//   // left: 90px
+//   max-width: 350px
+//
+//
+// .right__container
+//   max-width: 350px
+//   margin: 0 auto 0 0
+//   width: 100%
+//   padding: 5em 0 0 5em
 
-.right
-  width: 40%
-  position: fixed
-  right: 0
-  bottom: 0
-  top: 0
-  background: white
-.right__header
-  // position: absolute
-  // top: 90px
-  // left: 90px
-.right__text
-  position: absolute
-  bottom: 5em
-  // left: 90px
-  max-width: 350px
-
-@media (max-width: 1280px)
-  .right
-    width: 50%
-  .left
-    width: 50%
-
-@media (max-width: 600px)
-  .right
-    width: 100%
-  .left
-    width: 100%
-    height: 300px
-    position: relative
-
-
-.right__container
-  max-width: 350px
-  margin: 0 auto 0 0
-  width: 100%
-  padding: 5em 0 0 5em
-.btn
+.btn, button[type="submit"]
   display: inline-block
   font-size: 16px
   border: 1px $main solid
@@ -88,8 +80,19 @@ p
   color: $main
   text-decoration: none
   transition: .7s all
+  cursor: pointer
+  font-family: 'Imperial'
+  &.filled
+    background: $main
+    color: white
+    border: none
+  &.small
+    padding: .75em 1.5em
   &:hover
     background: #f2f2f2
+.full-width
+  display: block
+  width: 100%
 
 .container
   max-width: 1400px
@@ -134,10 +137,36 @@ nav a
 
 label
   display: block
-  margin-bottom: 5px
+  margin-bottom: 1em
 input, textarea
   padding: 1em
   display: block
   width: 100%
   border: 1px #ccc solid
-  margin-bottom: 1.5em
+  margin-bottom: 2.5em
+  font-size: 14px
+.lined
+  padding-bottom: 1em
+  margin-bottom: 3em
+  border-bottom: 1px #ccc solid
+.light
+  color: #999
+
+// @media (max-width: 1280px)
+//   .right
+//     width: 50%
+//   .left
+//     width: 50%
+//
+// @media (min-width: 200px) and (max-width: 1280px)
+//   .right, .left
+//     position: relative
+//     width: 100%
+//     float: none
+//     left: auto
+//     bottom: auto
+//     right: auto
+//     top: auto
+//     box-sizing: border-box
+//   .left
+//     height: 50%
