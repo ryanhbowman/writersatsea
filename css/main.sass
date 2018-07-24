@@ -106,15 +106,24 @@ nav a
   .three
     flex: 3
 header
-  margin: 4em 0 0 4em
+  top: 4em
+  left: 4em
+  position: fixed
+
   h1
     margin-bottom: 10px
+.main
+  margin-left: 33%
+  margin-top: 150px
 @media (max-width: 600px)
   header
     margin: 1.5em 0 0 1.5em
+    top: auto
+    left: auto
+    position: relative
   .flex
     display: block
-    margin: 0 1.5em
+    margin: 0 1.5rem
   nav
     margin-bottom: 2em
 .text-block
