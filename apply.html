@@ -2,15 +2,39 @@
   <head>
     <title>Writers at Sea - Apply</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link rel="stylesheet" href="css/main.css">
+
   </head>
   <body>
-      <div class="right__header">
-        <h1><a href="index.html">At<br/>Sea</a></h1>
+    <header class="">
+        <h1>At<br/>Sea</h1>
+    </header>
+    <div class="flex">
+      <nav class="one">
+        <a href="index.html">Home</a><Br/>
+        <a href="information.html">Information</a><Br/>
+        <a href="apply.html">Apply</a>
+      </nav>
+      <div class="three">
+        <form action="https://send.pageclip.co/PFtkQzmnLmP7oJGSBAUicp2tcQTOQ9il" class="pageclip-form text-block" method="post">
+          <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+
+          <label for="name">Your Name</label>
+          <input type="text" name="name" placeholder="Your Name" /  >
+
+          <label for="email">Your Email</label>
+          <input type="email" name="email" placeholder="roscoe@example.com" />
+
+          <label for="why">Why are you applying?</label>
+          <textarea name="why" rows="8" cols="80"></textarea>
+
+          <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+          <button type="submit" class="pageclip-form__submit">
+            <span>Submit</span>
+          </button>
+        </form>
       </div>
-      <div class="right__text">
-        <p>Apply Here</p>
-      </div>
-    </div>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>
